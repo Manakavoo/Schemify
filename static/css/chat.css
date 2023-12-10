@@ -75,6 +75,7 @@
     width: 25%;
     float: right;
     font-size: 20px;
+    z-index: 4;
 }
 
 #chat-icon:hover {

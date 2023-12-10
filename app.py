@@ -152,19 +152,20 @@ def generate_survey():
     try:
         if(message == '/start'):
             survey_responses = {}
-            return jsonify({'process': True,'type': "simple", 'response': "Please answer the questions for personalised recommendation. What is your age? eg: 11, 15, etc.,"})
+            return jsonify({'process': True,'type': "complex", 'response': {"reply": "Please answer the following survey for personalised scheme recommendations.", "options": ["What is your age? eg. 1, 18, 33, etc.,"]}})
+        
         elif 'age' not in survey_responses:
             if message is not None:
                 try:
                     age = int(message)
-                    if age < 0 or age > 140:
+                    if age < 0 or age > 120:
                         raise ValueError("Age must be a valid number.")
                     survey_responses['age'] = age
                     print(survey_responses)
-                    #
-                    return jsonify({'process': True,'type': "complex", 'response': {"reply": "Thanks! then, what is your Religion? enter the number", "options": ["hindu", "muslim", "christian", "others"]}})
+                    return jsonify({'process': True,'type': "complex", 'response': {"reply": "Thank you for your coordination! What is your Religion? enter the number alone", "options": ["hindu", "muslim", "christian", "others"]}})
                 except ValueError:
                     return jsonify({'process': True,'type': "simple", 'response': "Please provide a valid positive integer for the age question."})
+        
         elif 'religion' not in survey_responses:
             if message is not None:
                 try:
@@ -182,7 +183,7 @@ def generate_survey():
                         case default:
                             survey_responses['religion'] = "others"
                     print(survey_responses)
-                    return jsonify({'process': True,'type': "complex", 'response': {"reply": "Got it! then, what is your community? enter the number", "options": ["bc", "mbc", "oc", "sc/st", "others"]}})
+                    return jsonify({'process': True,'type': "complex", 'response': {"reply": "Things going well :) What is your community? enter the number alone", "options": ["bc", "mbc", "oc", "sc/st", "others"]}})
                 except ValueError:
                     return jsonify({'process': True,'type': "simple", 'response': "Please provide a valid positive number"})   
             else:
@@ -207,11 +208,12 @@ def generate_survey():
                         case default:
                             survey_responses['community'] = "others"
                     print(survey_responses)
-                    return jsonify({'process': True,'type': "simple", 'response': "Ok then...What is your family annual income?"})
+                    return jsonify({'process': True,'type': "simple", 'response': "Ok, Next What is your family annual income?"})
                 except ValueError:
                     return jsonify({'process': True,'type': "simple", 'response': "Please provide a valid positive number"})   
             else:
-                return jsonify({'process': True,'type': "simple", 'response': "Please provide a response for the ccommunity question."})
+                return jsonify({'process': True,'type': "simple", 'response': "Please provide a response for the community question."})
+            
         elif 'income' not in survey_responses:
             if message is not None:
                 try:
@@ -296,7 +298,7 @@ def generate_survey():
             else:
                 return jsonify({'process': True,'type': "simple", 'response': "Please provide a response for the beneficiary segment question."})  
     except Exception as e:
-            return jsonify({'process': False,'type': "simple", 'response': "/start to begin"})
+            return jsonify({'process': False,'type': "simple", 'response': "Error occured while conducting the survey. Please enter /start to start the survey again"})
     
 
 @app.route('/get_response')

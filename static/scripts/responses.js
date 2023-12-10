@@ -2,7 +2,9 @@ let flag = false;
 
 function getBotResponse() {
   var rawText = $("#nameInput").val();
+  console.log(rawText);
   var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+  console.log(userHtml);
 
   $("#nameInput").val("");
   $("#chatbox").append(userHtml);
@@ -71,10 +73,18 @@ function getBotResponse() {
 $("#nameInput").keypress(function (e) {
   if (e.which == 13) {
     var userInput = $("#nameInput").val().trim();
-
     if (userInput !== "") {
       getBotResponse();
     }
     e.preventDefault();
   }
 });
+
+function sendButton() {
+  var userInput = $("#nameInput").val().trim();
+  if (userInput !== "") {
+    setTimeout(() => {
+      getBotResponse();
+    }, 100);
+  }
+}

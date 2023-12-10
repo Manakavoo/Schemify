@@ -35,7 +35,7 @@ function getTime() {
 // Gets the first message
 function firstBotMessage() {
   let firstMessage =
-    "My name is Scheme Bot. I will answer your scheme related queries. Ask something.....";
+    "My name is Scheme Bot. I will answer your scheme related queries. I am currently in my BETA version. So, I may produce inappropirate data. Press '/start' to get the scheme related information.";
   document.getElementById("botStarterMessage").innerHTML =
     '<p class="botText"><span>' + firstMessage + "</span></p>";
 
@@ -45,56 +45,3 @@ function firstBotMessage() {
   document.getElementById("userInput").scrollIntoView(false);
 }
 firstBotMessage();
-
-// Retrieves the response
-function getHardResponse(userText) {
-  let botResponse = getBotResponse(userText);
-  let botHtml = '<p class="botText"><span>' + botResponse + "</span></p>";
-  $("#chatbox").append(botHtml);
-
-  document.getElementById("chat-bar-bottom").scrollIntoView(true);
-}
-
-//Gets the text text from the input box and processes it
-function getResponse() {
-  let userText = $("#textInput").val();
-
-  if (userText == null) {
-    return;
-  }
-
-  let userHtml = '<p class="userText"><span>' + userText + "</span></p>";
-
-  $("#textInput").val("");
-  $("#chatbox").append(userHtml);
-  document.getElementById("chat-bar-bottom").scrollIntoView(true);
-
-  setTimeout(() => {
-    getHardResponse(userText);
-  }, 1000);
-}
-
-// Handles sending text via button clicks
-function buttonSendText(sampleText) {
-  let userHtml = '<p class="userText"><span>' + sampleText + "</span></p>";
-
-  $("#textInput").val("");
-  $("#chatbox").append(userHtml);
-  document.getElementById("chat-bar-bottom").scrollIntoView(true);
-
-  //Uncomment this if you want the bot to respond to this buttonSendText event
-  // setTimeout(() => {
-  //     getHardResponse(sampleText);
-  // }, 1000)
-}
-
-function sendButton() {
-  getResponse();
-}
-
-// Press enter to send a message
-$("#textInput").keypress(function (e) {
-  if (e.which == 13) {
-    getResponse();
-  }
-});
