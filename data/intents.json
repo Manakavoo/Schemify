@@ -1,0 +1,229 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "greetings",
+        "hi there",
+        "howdy",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "what's up",
+        "how's it going",
+        "hiya",
+        "how do you do",
+        "nice to meet you",
+        "hey there",
+        "gday",
+        "yo",
+        "sup",
+        "hi friend",
+        "hello friend"
+      ],
+      "responses": [
+        "Hi there! /start to know about the schemes you are eligible for.",
+        "Hello! /start to know about the schemes you are eligible for.",
+        "Hey! /start to know about the schemes"
+      ]
+    },
+    {
+      "tag": "scheme",
+      "patterns": [
+        "schemes",
+        "scheme",
+        "shceme",
+        "shcemes",
+        "sh",
+        "shc",
+        "sche",
+        "schem"
+      ],
+      "responses": [
+        "/start to know about the schemes you are eligible for.",
+        "/start to know about the schemes you are eligible for.",
+        "/start to know about the schemes"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "see ya",
+        "farewell",
+        "take care",
+        "until next time",
+        "so long",
+        "bye for now",
+        "adios",
+        "ciao",
+        "see you soon",
+        "catch you later",
+        "later",
+        "goodnight",
+        "bye bye",
+        "have a great day",
+        "have a nice day",
+        "goodnight"
+      ],
+      "responses": [
+        "Goodbye! If you have more questions, feel free to ask.",
+        "See you later! Have a great day.",
+        "Farewell!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thank you",
+        "thank",
+        "thanks",
+        "appreciate it",
+        "thanks a lot",
+        "thank you so much",
+        "thank you very much",
+        "thanks a bunch",
+        "thanks heaps",
+        "thanks a million",
+        "cheers",
+        "thanks a ton",
+        "thanks a heap",
+        "thanks a bunch",
+        "thanks heaps",
+        "many thanks",
+        "thanks a million",
+        "thanks so much",
+        "thanks a ton",
+        "thanks a bundle",
+        "thanks a bunch"
+      ],
+      "responses": [
+        "You're welcome! If you need anything else, feel free to ask.",
+        "Glad I could help! If you have more questions, just let me know."
+      ]
+    },
+    {
+      "tag": "unnecessary",
+      "patterns": [
+        "tell me a joke",
+        "sing a song",
+        "random",
+        "anything",
+        "do you like pizza",
+        "entertain me",
+        "make me laugh",
+        "what's your favorite color",
+        "surprise me",
+        "do something fun",
+        "say something funny",
+        "tell a story",
+        "what's up",
+        "what's new",
+        "talk to me",
+        "chat with me",
+        "share something interesting",
+        "amuse me",
+        "say anything",
+        "keep me company"
+      ],
+      "responses": [
+        "I'm here to assist you with scheme information. Please ask about /start to know about the schemes you are eligible for."
+      ]
+    },
+    {
+      "tag": "good_mood",
+      "patterns": [
+        "How are you",
+        "What's up",
+        "How's it going",
+        "you're awesome",
+        "you're great",
+        "you're amazing",
+        "you're fantastic",
+        "you're brilliant",
+        "you're superb",
+        "you're terrific",
+        "you're outstanding",
+        "you're splendid",
+        "you're excellent",
+        "you're marvelous",
+        "you're superb",
+        "you're incredible",
+        "you're exceptional",
+        "you're phenomenal",
+        "you're splendid",
+        "you're top notch"
+      ],
+      "responses": [
+        "I'm just a computer program, but I'm here and ready to assist you!.... enter /start to start the survey"
+      ]
+    },
+    {
+      "tag": "welcome",
+      "patterns": [
+        "start",
+        "begin",
+        "get started",
+        "initiate",
+        "welcome",
+        "welcome aboard",
+        "welcome to the chat",
+        "let's begin",
+        "let's get started",
+        "begin the conversation",
+        "start the interaction",
+        "start a chat",
+        "initiate a conversation",
+        "greetings and salutations",
+        "hello and welcome",
+        "let the conversation begin",
+        "start the discussion",
+        "begin the dialogue",
+        "get things started"
+      ],
+      "responses": [
+        "Welcome! I can help you discover government schemes you may be eligible for. Just provide me /start to start the survey"
+      ]
+    },
+    {
+      "tag": "adult_guidelines",
+      "patterns": [
+        "adult content",
+        "inappropriate",
+        "age restriction",
+        "guidelines",
+        "content restrictions",
+        "respectful conversation",
+        "content guidelines",
+        "mature content",
+        "age appropriate",
+        "content policy",
+        "acceptable content",
+        "inoffensive topics",
+        "sensitive content",
+        "content boundaries",
+        "inoffensive conversation",
+        "appropriate topics",
+        "following guidelines",
+        "maintaining decorum",
+        "policy compliance",
+        "appropriate conversation"
+      ],
+      "responses": [
+        "I'm here to provide information about government schemes in a respectful manner. Please refrain from inappropriate content. If you have questions about schemes, feel free to ask."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": ["default", "fallback", "fallback intent", "no match"],
+      "responses": [
+        "I'm sorry, I didn't quite get that. Can you please rephrase or ask about government schemes?"
+      ]
+    }
+  ]
+}
