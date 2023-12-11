@@ -1,3 +1,9 @@
+"""
+Disclaimer: Ensure that you have reviewed and comply with the licensing terms and usage policies associated with any third-party libraries or data sources used in this script.
+Author: Chiristo Selva Nimal
+
+"""
+
 import json
 from flask import Flask, render_template, request, jsonify
 import random
@@ -262,7 +268,7 @@ def generate_survey():
                             options = [opt for opt in options if opt not in ["Farmer", "Widow/Destitute women", "Government Employee"]]
                         elif age_option > 24:
                             options = [opt for opt in options if opt != "Student"]
-                    else:  # Others
+                    else:  
                         options = ["Student", "Farmer", "Government Employee", "Sports person", "Unemployed", "Widow/Destitute women", "Others"]
                         if age_option <= 18:
                             options = [opt for opt in options if opt not in ["Farmer", "Government Employee", "Widow/Destitute women"]]
