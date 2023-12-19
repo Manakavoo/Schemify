@@ -27,6 +27,25 @@
       ]
     },
     {
+      "tag": "questions",
+      "patterns":[
+        "who",
+        "who?",
+        "why",
+        "why?",
+        "when",
+        "when?",
+        "where",
+        "where?",
+        "what",
+        "what?"
+      ],
+      "responses":[
+        "Sorry, I here to talk about Schemes. Press '/start' to know about the schemes",
+        "Your question good....But I only trained to answer about government schemes..So press '/start' to know about the government schemes"
+      ]
+    },
+    {
       "tag": "terminators",
       "patterns":[
         "hmm",
