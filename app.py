@@ -88,7 +88,7 @@ def dict_to_feature(survey_responses):
                 default_values['segment_unemployed'] = 1
             elif value.lower() == 'widow' or value.lower() == 'destitute women':
                 default_values['segment_widow'] = 1
-            else:
+            else: 
                 default_values['segment_others'] = 1
         else:
             default_values[key] = value
@@ -319,6 +319,7 @@ def get_response():
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 # main function
 if __name__ == "__main__":

@@ -1,0 +1,125 @@
+[
+  {
+    "id": 1,
+    "name": "Pradhan Mantri Awas Yojana (PMAY)",
+    "description": "A centrally sponsored housing scheme aimed at providing affordable housing to the urban poor.",
+    "category": "Housing",
+    "eligibilityCriteria": [
+      "Beneficiary must be a resident of India",
+      "Income must be below a certain threshold",
+      "Beneficiary must not own a pucca house"
+    ],
+    "applicationProcess": [
+      "Apply through the official PMAY website or through a designated bank",
+      "Submit required documents (identity proof, income certificate, etc.)",
+      "If approved, beneficiary receives financial assistance for constructing or purchasing a house"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "description": "A crop insurance scheme aimed at providing financial support to farmers in case of crop failure or damage.",
+    "category": "Agriculture",
+    "eligibilityCriteria": [
+      "Beneficiary must be a farmer",
+      "Crops must be insured under the PMFBY scheme"
+    ],
+    "applicationProcess": [
+      "Apply through designated insurance companies or banks",
+      "Pay the required premium",
+      "In case of crop loss, claims can be filed and compensation received"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+    "description": "A financial inclusion scheme aimed at providing access to banking services to all households.",
+    "category": "Financial Inclusion",
+    "eligibilityCriteria": [
+      "Beneficiary must be an Indian citizen",
+      "Beneficiary must not have a bank account"
+    ],
+    "applicationProcess": [
+      "Visit a designated bank branch",
+      "Submit required documents (identity proof, address proof, etc.)",
+      "Open a basic savings bank account"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "description": "A social welfare scheme aimed at providing free LPG connections to women from Below Poverty Line (BPL) households.",
+    "category": "Energy",
+    "eligibilityCriteria": [
+      "Beneficiary must be a woman from a BPL household",
+      "Beneficiary must not have an existing LPG connection",
+      "Beneficiary must possess a valid Aadhaar card"
+    ],
+    "applicationProcess": [
+      "Apply through the official PMUY website or designated distribution agency",
+      "Submit required documents (identity proof, address proof, BPL certificate, etc.)",
+      "If approved, beneficiary receives a free LPG connection and a stove"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+    "description": "A skill development scheme aimed at providing industry-relevant skill training to youth and promoting entrepreneurship.",
+    "category": "Employment",
+    "eligibilityCriteria": [
+      "Beneficiary must be between 15-45 years of age",
+      "Beneficiary must meet the minimum educational qualifications required for the chosen training program"
+    ],
+    "applicationProcess": [
+      "Find an approved training center or partner institute",
+      "Apply for the desired training program",
+      "If selected, complete the training and receive a certificate or certification"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (AB-PMJAY)",
+    "description": "A national health protection scheme that aims to provide healthcare coverage to underprivileged families in India.",
+    "category": "Healthcare",
+    "eligibilityCriteria": [
+      "Beneficiary must be a member of a household listed in the Socio-Economic Caste Census (SECC) database",
+      "Beneficiary must not be covered under any other health insurance scheme"
+    ],
+    "applicationProcess": [
+      "Check eligibility through the official AB-PMJAY website or mobile app",
+      "Visit an empaneled hospital and present the AB-PMJAY card or e-card",
+      "Receive cashless healthcare services up to INR 5 lakh per year"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Pradhan Mantri Awas Yojana (PMAY) - Gramin",
+    "description": "A centrally sponsored housing scheme aimed at providing affordable housing to the rural poor.",
+    "category": "Housing",
+    "eligibilityCriteria": [
+      "Beneficiary must be a resident of a rural area",
+      "Income must be below a certain threshold",
+      "Beneficiary must not own a pucca house"
+    ],
+    "applicationProcess": [
+      "Apply through the designated local authorities",
+      "Submit required documents (identity proof, income certificate, etc.)",
+      "If approved, beneficiary receives financial assistance for constructing a new house or upgrading an existing one"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Pradhan Mantri Krishi Sinchayee Yojana (PMKSY)",
+    "description": "A centrally sponsored scheme aimed at promoting efficient water management practices in agriculture.",
+    "category": "Agriculture",
+    "eligibilityCriteria": [
+      "Beneficiary must be a farmer or a farmer producer organization",
+      "Proposed projects must meet the eligibility criteria set by the state government"
+    ],
+    "applicationProcess": [
+      "Apply through the designated state government authorities",
+      "Submit project proposal and required documents",
+      "If approved, receive financial assistance for implementing water management practices"
+    ]
+  }
+]

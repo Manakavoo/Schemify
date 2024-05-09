@@ -35,7 +35,7 @@ function getTime() {
 // Gets the first message
 function firstBotMessage() {
   let firstMessage =
-    "My name is Scheme Bot. I will answer your scheme related queries. I am currently in my BETA version. So, I may produce inappropirate data. Press '/start' to get the scheme related information.";
+    "Hello ,I'm Schemify. I will answer your scheme related queries. Type '/start' to get the scheme related information.";
   document.getElementById("botStarterMessage").innerHTML =
     '<p class="botText"><span>' + firstMessage + "</span></p>";
 

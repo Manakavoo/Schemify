@@ -18,7 +18,10 @@
         "gday",
         "yo",
         "sup",
-        "hi friend"
+        "hi friend",
+        "vanakam",
+        "vanakkam",
+        "oii"
       ],
       "responses": [
         "Hi there! Thank you for saying hello....I am here to assist you with recommending shcemes you might be eligible.... Press '/start' to start the survey",
@@ -38,7 +41,8 @@
         "where",
         "where?",
         "what",
-        "what?"
+        "what?",
+        "enna panra"
       ],
       "responses":[
         "Sorry, I here to talk about Schemes. Press '/start' to know about the schemes",

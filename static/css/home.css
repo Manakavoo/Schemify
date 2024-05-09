@@ -5,5 +5,10 @@ html {
 
 body {
     margin: 0 auto;
-    background-color: white;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url("../images/background.jpg");
+    background-size: auto 60%; /* Auto width, 100% height */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background */
+    background-position: center;
 }

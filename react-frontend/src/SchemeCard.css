@@ -1,0 +1,53 @@
+
+
+ .scheme-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  position: relative;
+}
+
+.show-data-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.show-data-button:hover {
+  background-color: #0056b3;
+}
+
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.popup p {
+  margin-bottom: 10px;
+}
+
+.popup button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px; /* Increased padding */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px; /* Added margin */
+}
+
+.popup button:hover {
+  background-color: #0056b3;
+}
