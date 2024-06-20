@@ -30,12 +30,3 @@ To run the Schemify-Chatbot application locally, follow these steps:
 
 ## Usage
 
-[Add any usage instructions here]
-
-## Contributing
-
-[Explain how others can contribute to your project]
-
-## License
-
-[Include information about the license for your project]
